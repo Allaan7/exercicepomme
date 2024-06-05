@@ -1,0 +1,39 @@
+#conteneur{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #AABB44;
+}
+
+body{
+    background-color: #DDEEAA;
+    margin: 0 auto;
+}
+header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: flex-start; */
+}
+
+.titre1{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+nav{
+    background-color: #91D339;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav a{
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    border-right: 1px solid white;
+    padding: 1px 50px;
+
+}
