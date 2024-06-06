@@ -1,67 +1,76 @@
+#conteneur{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 1px solid #AABB44;
+}
 body{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
-    background: #DDEEAA;
+    background-color: #DDEEAA;
+    margin: 0 auto;
 }
-
-.conteneur {
-    width: 770px;/*largeur*/
-    margin: 0 auto;/*marge automatique qui centre le bloc après l'avoir remonté le plus haut possible dans mon affichage*/
-    text-align: left;/*centre le contenu de mon #conteneur*/
-    border: 2px solid #AABB44;/*bordure autour de toute la page*/
-    background: #fff;/*couleur du fond de mon #conteneur*/
+header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: flex-start; */
 }
-
-h1{
-    height: 258px;/*personnaliser la hauteur de mon titre*/
-    background: url(../img/apple.jpg) no-repeat left top;
-    margin: 0;
+.titre1{
+    margin-top: 10px;
+    margin-right: 20px;
 }
-
-h1 a{
-    width: 400px;
-    height: 70px;
-    display: block;
-    background: url(../img/title.gif) no-repeat;
-    position: relative;
-    left: 350px;
-    top: 15px;
-    text-indent: -5000px;
-    /*Le text-indent négatif est fait pour pouvoir ne cacher le texte hors de la page, 
-    ce que nous voulons.*/
+nav{
+    background-color: #91D339;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-
-ul {
-	height: 35px;/*On donne une hauteur au menu, correspondant à la taille de l'image utilisée en fond*/
-	margin: 0;
-	padding: 0;
-	background: url(../img/bg_menu.gif) repeat-x 0 -25px;/*, on met ensuite l'image de fond avec un décalage de 25 pixels vers le haut*/
-    list-style-type: none;/*on cache les puces*/
+nav a{
+    text-decoration: none;
 }
+a{
+    color: white;
+    border-right: 1px solid white;
+    padding: 1px 50px;
 
-ul li{
-    float: left ;/*On rend les li en flottant pour pouvoir les afficher horizontalement*/
-    text-align: center ;/*on centre le texte*/
 }
-
-ul li a{
-    display: block ;/*Nous pouvons dimensionner les a grâce à la propriété display: block;*/
-    width: 130px ;/*largeur*/
-    line-height: 25px ;/*hauteur de ligne*/
-    font-size: 1.2em ;/*taille de police*/
-    font-weight: bold ;/*mise en accentuation gras/bold de la police*/
-    letter-spacing: 2px ;/*espacement des lettres*/
-    color: #fff ;/*couleur du texte (de la police)*/
-    text-decoration: none ;/*décoration du texte*/
-    border-right: 2px solid #dea ;/*bordure*/
-}
-
-ul li a:hover{/*on décale l'image de fond au passage de la souris pour laisser aparaître l'état survolé de l'image*/
+nav a:hover{
     background: url(../img/bg_menu.gif) repeat-x 0 0 ;
 }
+section{
+    display: flex;
+    flex-flow: nowrap row;
+}
+main{
+    padding-left: 5%;
 
+}
+.bgpom{
+    margin-left: 2%;
+    margin-top: 2%;
+    
+}
+h2{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #92B116;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    text-indent: 1em;
+    color: #92B116;
+}
+h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #92B116;
+    border-left: 3px solid #92B116;
+    color: #92B116;
+}
+p{
+    text-indent: 2em;
+}
+hr{
+    color: #91D339;
+}
 footer{
 	margin: 0;
 	padding-right: 10px;
